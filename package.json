@@ -1,0 +1,20 @@
+{
+  "name": "LIRI_Bot",
+  "version": "1.0.0",
+  "description": "Language Interpretation and Recognition Interface: Command line Node.js app that searches for songs, performances, and films using the Spotify, BandsInTown, and OMDB APIs.",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvtron/LIRI_Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marvtron/LIRI_Bot/issues"
+  },
+  "homepage": "https://github.com/marvtron/LIRI_Bot#readme"
+}
