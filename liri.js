@@ -25,7 +25,7 @@ switch (command) {
     spotifyLog(song);
     break;
 
-case "movie-this":
+    case "movie-this":
     var restOfArgs = process.argv.splice(3, process.argv.length);
     var movieName = restOfArgs.join(" ");
     console.log(restOfArgs);
@@ -35,10 +35,11 @@ case "movie-this":
     movieLog();
     break;
 
-case "do-what-it-says":
+    case "do-what-it-says":
     addLog();
     break;
-case "commands":
+    
+    case "commands":
     console.log("\nspotify-this-song\nmovie-this\ndo-what-it-says");
     break;
 }
