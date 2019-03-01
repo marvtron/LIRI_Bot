@@ -1,6 +1,6 @@
 console.log('this is loaded');
 
-exports.spotifyKeys = {
-    id: '8d40010e05104beb92a3216118cf9e4a',
-    secret: 'a758b7d3615747e4bfc80c0cedaaab98'
+module.exports = {
+ id: process.env.SPOTIFY_ID,
+ secret: process.env.SPOTIFY_SECRET
 };

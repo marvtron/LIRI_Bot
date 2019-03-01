@@ -19,6 +19,7 @@
   "homepage": "https://github.com/marvtron/LIRI_Bot#readme",
   "dependencies": {
     "axiom": "^0.1.6",
+    "dotenv": "^6.2.0",
     "node-spotify-api": "^1.0.7"
   }
 }
