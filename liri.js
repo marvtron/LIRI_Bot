@@ -13,7 +13,7 @@ var mySpotifyKeys = require("./keys.js");
 
 //set variable for spotify key from keys.js
 var spotifyKeyList = mySpotifyKeys;
-console.log(spotifyKeyList);
+//console.log(spotifyKeyList);
 var spotify = new Spotify(spotifyKeyList);
 
 switch (command) {
@@ -78,7 +78,7 @@ function spotifyLog(song) {
 
 //create function for bandsintown command 
 function concertThis(concert) {
-    
+
 }
 
 //create function for omdb command
