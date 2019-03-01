@@ -24,7 +24,7 @@ switch (command) {
     if (process.argv[3] === undefined) {
         var concert = 'ABBA';
     }
-    concertThis();
+    concertLog();
     break;
 
     case "spotify-this-song":
@@ -40,7 +40,7 @@ switch (command) {
     var restOfArgs = process.argv.splice(3, process.argv.length);
     var movieName = restOfArgs.join(" ");
     console.log(restOfArgs);
-    if (process.argv[3] === undefined) {
+    if (movieName === undefined) {
         movieName = "Stargate";
    }
 
@@ -77,7 +77,7 @@ function spotifyLog(song) {
 
 
 //create function for bandsintown command 
-function concertThis(concert) {
+function concertLog() {
 
 }
 
@@ -97,7 +97,7 @@ function movieLog() {
             console.log("Language of the movie: " + JSON.parse(body).Language);
             console.log("Plot of the movie: " + JSON.parse(body).Plot);
             console.log("Actors in the movie: " + JSON.parse(body).Actors);
-            console.log("Rotten Tomatoes URL: " + JSON.parse(body).URL);
+            console.log("Rotten Tomatoes URL: " + JSON.parse(body).Website);
 
     }
 });
