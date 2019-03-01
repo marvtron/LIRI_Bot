@@ -22,3 +22,9 @@ Artist(s): Big Shaq
  Preview Url: null
  Album Name: Man's Not Hot
 
+
+Artist(s): Gunna
+ Song Name: One Call
+ Preview Url: https://p.scdn.co/mp3-preview/66a225a9f1c56540e92f4b19f093ace03e92d84d?cid=8d40010e05104beb92a3216118cf9e4a
+ Album Name: One Call
+

@@ -102,3 +102,19 @@ function movieLog() {
     }
 });
 }
+
+function addLog() {
+    //run readFile and store the read information into the variable "data"
+    fs.readFile("random.txt", "utf8", function(err, data) {
+        if (err) {
+            return console.log(err);
+        } else {
+            var dataArr = data.split(",")
+            var command = dataArr[0];
+            var song = dataArr[1];
+
+            spotifyLog(song);
+        }
+
+    });
+}
