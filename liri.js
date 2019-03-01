@@ -40,7 +40,7 @@ switch (command) {
     var restOfArgs = process.argv.splice(3, process.argv.length);
     var movieName = restOfArgs.join(" ");
     console.log(restOfArgs);
-    if (movieName === " ") {
+    if (process.argv[3] === undefined) {
         movieName = "Stargate";
    }
 
