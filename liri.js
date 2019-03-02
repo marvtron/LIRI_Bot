@@ -83,9 +83,9 @@ function concertThis(arg) {
       for (var event in body) {
           display("Venue: ".blue, body[event].venue.name);
           display("Location: ".blue, body[event].venue.city + ", " + body[event].venue.region + ", " + body[event].venue.country);
-            var m = moment(body[event].datetime).format('MM/DD/YYYY, h:mm a').split(", ");
-              display("Date: ".red, m[0]);
-              display("Time: ".red, m[1]);
+      var m = moment(body[event].datetime).format('MM/DD/YYYY, h:mm a').split(", ");
+          display("Date: ".red, m[0]);
+          display("Time: ".red, m[1]);
 
           contentAdded();
         }
@@ -114,7 +114,7 @@ function movieThis(arg) {
         display("Language: ".blue, body.Language);
         display("Plot: ".blue, body.Plot);
         display("Actors: ".blue, body.Actors);
-        
+
         contentAdded();
      }
   });
