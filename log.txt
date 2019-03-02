@@ -1,30 +1,5 @@
-
-Artist(s): Ace of Base
- Song Name: The Sign
- Preview Url: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=8d40010e05104beb92a3216118cf9e4a
- Album Name: The Sign (US Album) [Remastered]
-
-
-Artist(s): Taylor Swift
- Song Name: If This Was A Movie
- Preview Url: null
- Album Name: Speak Now (Deluxe Edition)
-
-
-Artist(s): Big Shaq
- Song Name: Man's Not Hot
- Preview Url: null
- Album Name: Man's Not Hot
-
-
-Artist(s): Big Shaq
- Song Name: Man's Not Hot
- Preview Url: null
- Album Name: Man's Not Hot
-
-
-Artist(s): Gunna
- Song Name: One Call
- Preview Url: https://p.scdn.co/mp3-preview/66a225a9f1c56540e92f4b19f093ace03e92d84d?cid=8d40010e05104beb92a3216118cf9e4a
- Album Name: One Call
-
+[31mArtist(s) Name: [39mThe Lovin' Spoonful
+[32mAlbum: [39mDo you Believe In Magic
+-----------------------------------
+[34mTrack Name: [39mDo You Believe in Magic?
+[33mPreview URL: [39mhttps://p.scdn.co/mp3-preview/3a68c7436943a6cb0680e953842368aadad7513c?cid=8d40010e05104beb92a3216118cf9e4a
