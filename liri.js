@@ -19,7 +19,6 @@ var mySpotifyKeys = require("./keys.js");
 
 //set variable for spotify key from keys.js
 var spotifyKeyList = mySpotifyKeys;
-//console.log(spotifyKeyList);
 var spotify = new Spotify(spotifyKeyList);
 
 switch (cmd) {
@@ -46,11 +45,11 @@ switch (cmd) {
 }
 
 //spotify-this function
+
 function spotifyThis(arg) {
     var song = arg;
     if (!song) {
       song = "Mans+not+hot";
-      //console.log(song);
     }
     spotify.search({
       type: 'track',
@@ -65,11 +64,13 @@ function spotifyThis(arg) {
      display("Track Name: ".blue, data.name);
      display("Preview URL: ".blue, data.preview_url);
      display("Album: ".blue, data.album.name);
-      contentAdded();
+
+     contentAdded();
     });
   }
 
 //create function for bandsintown command 
+
 function concertThis(arg) {
     var artist = arg;
     if (!artist){
@@ -79,27 +80,26 @@ function concertThis(arg) {
     request(queryUrl, function(error, response, body) {
       if (!error && response.statusCode === 200) {
         body = JSON.parse(body);
-        for (var event in body) {
+      for (var event in body) {
           display("Venue: ".blue, body[event].venue.name);
           display("Location: ".blue, body[event].venue.city + ", " + body[event].venue.region + ", " + body[event].venue.country);
-          var m = moment(body[event].datetime).format('MM/DD/YYYY, h:mm a').split(", ");
-          display("Date: ".red, m[0]);
-          display("Time: ".red, m[1]);
+            var m = moment(body[event].datetime).format('MM/DD/YYYY, h:mm a').split(", ");
+              display("Date: ".red, m[0]);
+              display("Time: ".red, m[1]);
 
           contentAdded();
-          
         }
       }
     });
   }
 
 //create function for omdb command
-// movie-this function
+
 function movieThis(arg) {
     var movieName = arg;
     if (!movieName) {
       movieName = "Stargate";
-    };
+    }
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
     request(queryUrl, function(error, response, body) {
       if (!error && response.statusCode === 200) {
@@ -107,35 +107,39 @@ function movieThis(arg) {
         display("Title: ".green, body.Title);
         display("Year: ".blue, body.Year);
         display("IMDB Rating: ".blue, body.imdbRating);
-        if (body.Ratings[2]) {
-            display("Rotten Tomatoes Score: ".blue, body.Ratings[2].Value);
+      if (body.Ratings[2]) {
+        display("Rotten Tomatoes Score: ".blue, body.Ratings[2].Value);
         }
         display("Country: ".blue, body.Country);
         display("Language: ".blue, body.Language);
         display("Plot: ".blue, body.Plot);
         display("Actors: ".blue, body.Actors);
         contentAdded();
-      }
-    });
+     }
+  });
 }
   
 
 // do-what-it-says function
+
 function doWhatItSays() {
   fs.readFile("random.txt", "utf8", function(error, data) {
     if (error) {
       return console.log(error);
     }
     var dataArr = data.replace(/(\r\n|\n|\r)/gm, "").split(",");
+      
     for (var i = 0; i < dataArr.length; i += 2) {
-      var cmd = dataArr[i];
-      var arg = dataArr[i + 1].replace(/['"]+/g, '').split(' ').join("+");
+        var cmd = dataArr[i];
+        var arg = dataArr[i + 1].replace(/['"]+/g, '').split(' ').join("+");
+
       commandSwitch(cmd, arg);
     }
   });
 }
 
 // console.log / appendFile function
+
 function display(description, data) {
     console.log(description + data);
     appendFile(description + data + "\n");
@@ -148,9 +152,10 @@ function contentAdded() {
   appendFile("-----------------------------------\n");
 }
 //appendFile function
+
 function appendFile(arg) {
   fs.appendFile(textFile, arg, function(err) {
-    if (err) {
+      if (err) {
       console.log(err);
     } else {}
   });
