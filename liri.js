@@ -114,6 +114,7 @@ function movieThis(arg) {
         display("Language: ".blue, body.Language);
         display("Plot: ".blue, body.Plot);
         display("Actors: ".blue, body.Actors);
+        
         contentAdded();
      }
   });
