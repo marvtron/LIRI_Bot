@@ -152,6 +152,7 @@ function contentAdded() {
   console.log("-----------------------------------\n");
   appendFile("-----------------------------------\n");
 }
+
 //appendFile function
 
 function appendFile(arg) {
