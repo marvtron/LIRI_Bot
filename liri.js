@@ -61,10 +61,10 @@ function spotifyThis(arg) {
       }
       data = data.tracks.items[0];
       // console.log(data);
-     display("Artist(s) Name: ".red, data.artists[0].name);
+     display("Artist(s) Name: ".green, data.artists[0].name);
      display("Track Name: ".blue, data.name);
-     display("Preview URL: ".yellow, data.preview_url);
-     display("Album: ".green, data.album.name);
+     display("Preview URL: ".blue, data.preview_url);
+     display("Album: ".blue, data.album.name);
       contentAdded();
     });
   }
@@ -105,15 +105,15 @@ function movieThis(arg) {
       if (!error && response.statusCode === 200) {
         body = JSON.parse(body);
         display("Title: ".green, body.Title);
-        display("Year: ".yellow, body.Year);
-        display("IMDB Rating: ".red, body.imdbRating);
+        display("Year: ".blue, body.Year);
+        display("IMDB Rating: ".blue, body.imdbRating);
         if (body.Ratings[2]) {
             display("Rotten Tomatoes Score: ".blue, body.Ratings[2].Value);
         }
-        display("Country: ".orange, body.Country);
-        display("Language: ".rainbow, body.Language);
-        display("Plot: ".cyan, body.Plot);
-        display("Actors: ".magenta, body.Actors);
+        display("Country: ".blue, body.Country);
+        display("Language: ".blue, body.Language);
+        display("Plot: ".blue, body.Plot);
+        display("Actors: ".blue, body.Actors);
         contentAdded();
       }
     });
