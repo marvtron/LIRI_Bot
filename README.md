@@ -1,7 +1,7 @@
 # LIRI_Bot
-Language Interpretation and Recognition Interface: Command line Node.js app that searches for songs, performances, and films using the Spotify, BandsInTown, and OMDB APIs.
+Language Interpretation and Recognition Interface: Command line Node.js app that searches for and then returns songs, performances, and film information using the Spotify, BandsInTown, and OMDB APIs.
 
- LIRI is a command line node app that takes in parameters and returns data based on one of four commands:
+ ###### LIRI is a command line node app that takes in parameters and returns data based on one of four commands:
 
 - concert-this
 
@@ -13,19 +13,19 @@ Language Interpretation and Recognition Interface: Command line Node.js app that
 
 ### Getting Started
 
-Clone down repo.
-Run command 'npm install' in Terminal or GitBash
-Run command 'node liri.js' or one of the commands below.
+1. Clone down repo.
+2. Run command 'npm install' in Terminal or GitBash
+3. Run command 'node liri.js' or one of the commands above.
 What Each Command Does:
 
 **node liri.js spotify-this-song songName**
 Shows the following information about the song in terminal/bash window:
 
-Artist(s)
-The song's name
-A preview link of the song from Spotify
-The album that the song is from
-Or if no song is passed through, it will default to *"Man's Not Hot" by Big Shaq
+- Artist(s)
+- The song's name
+- A preview link of the song from Spotify
+- The album that the song is from
+- Or if no song is passed through, it will default to *"Man's Not Hot" by Big Shaq*
 
 **node liri.js concert-this bandName**
 Shows the following information about the band/artist's upcoming live performances in terminal/bash window: 
@@ -34,7 +34,7 @@ Shows the following information about the band/artist's upcoming live performanc
 - Location: City, State, Country
 - Date: MM/DD/YYY
 - Time: HH:MM am/pm
-
+- Or if no artist/band is passed through, it will default to *"Drake"*
 **node liri.js movie-this movieName**
 Shows the following information in terminal/bash:
 
@@ -47,10 +47,10 @@ Shows the following information in terminal/bash:
 - Actors in the movie.
  -Rotten Tomatoes Rating.
 - Rotten Tomatoes URL.
-- Or if no movie is passed through, it will default to "Stargate"
+- Or if no movie is passed through, it will default to *"Stargate"*
 
 **node liri.js do-what-it-says**
-Takes the text from random.txt and runs the song through spotify-this-song command
+Reads the text from random.txt and runs the song through spotify-this-song command
 
 #### Tech used:
 - Node.js
