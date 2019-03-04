@@ -59,10 +59,11 @@ Reads the text from random.txt and runs the song through spotify-this-song comma
 
 ###### Prerequisites
 - Node.js - Download the latest version of Node https://nodejs.org/en/
-Built With:
-- VS Code
-Author:
-- Marvin Tryon Jr - Node JS 
+
+**Built With:
+ - VS Code**
+   - Author:
+     - Marvin Tryon Jr - Node JS 
 
 **Video Demonstration**
 https://drive.google.com/open?id=1kJ3w-dd7DTEgKs1s7dWME02ktpX3lOdb
