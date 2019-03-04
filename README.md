@@ -3,15 +3,15 @@ Language Interpretation and Recognition Interface: Command line Node.js app that
 
  LIRI is a command line node app that takes in parameters and returns data based on one of four commands:
 
-concert-this
+- concert-this
 
-spotify-this-song
+- spotify-this-song
 
-movie-this
+- movie-this
 
-do-what-it-says
+- do-what-it-says
 
-###Getting Started
+### Getting Started
 
 Clone down repo.
 Run command 'npm install' in Terminal or GitBash
@@ -36,7 +36,7 @@ Shows the following information about the band/artist's upcoming live performanc
 - Time: HH:MM am/pm
 
 **node liri.js movie-this movieName**
-Shows the following information in terminal/bash.
+Shows the following information in terminal/bash:
 
 - Title of the movie.
 - Year the movie came out.
@@ -52,18 +52,22 @@ Shows the following information in terminal/bash.
 **node liri.js do-what-it-says**
 Takes the text from random.txt and runs the song through spotify-this-song command
 
-####Tech used:
+#### Tech used:
 - Node.js
 - Spotify NPM Package - https://www.npmjs.com/package/spotify
 - Request NPM Package - https://www.npmjs.com/package/request
 
-######Prerequisites
+###### Prerequisites
 - Node.js - Download the latest version of Node https://nodejs.org/en/
 Built With:
 - VS Code
 Author:
 - Marvin Tryon Jr - Node JS 
 
+**Video Demonstration**
+https://drive.google.com/open?id=1kJ3w-dd7DTEgKs1s7dWME02ktpX3lOdb
+
 ![alt text](https://github.com/marvtron/LIRI_Bot/blob/master/Screen%20Shot%202019-03-02%20at%2014.14.11.png)
 
+**My Website**
 https://marvtron.github.io/My-Portfolio/
