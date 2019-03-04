@@ -16,7 +16,8 @@ Language Interpretation and Recognition Interface: Command line Node.js app that
 1. Clone down repo.
 2. Run command 'npm install' in Terminal or GitBash
 3. Run command 'node liri.js' or one of the commands above.
-What Each Command Does:
+
+#### What Each Command Does:
 
 **node liri.js spotify-this-song songName**
 Shows the following information about the song in terminal/bash window:
