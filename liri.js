@@ -20,7 +20,9 @@ var mySpotifyKeys = require("./keys.js");
 //set variable for spotify key from keys.js
 var spotifyKeyList = mySpotifyKeys;
 var spotify = new Spotify(spotifyKeyList);
-
+commandSwitch(cmd, arg);
+//main command switch statement function
+function commandSwitch(cmd, arg) {
 switch (cmd) {
 
     case 'concert-this':
@@ -42,6 +44,7 @@ switch (cmd) {
     case "commands":
     console.log("\nspotify-this-song\nmovie-this\ndo-what-it-says");
     break;
+}
 }
 
 //spotify-this function
